@@ -123,7 +123,7 @@ p{
 }   
 .profile{
     /* float: left; */
-    width: 100%;
+    width: 60%;
     position:absolute;
     top : 35%;
     left:40%; 
@@ -223,8 +223,9 @@ li{
     display: flex;
     margin-right: 10rem;
     align-items:center;
-    /* column-gap: 5rem; */
-    margin-left: 8rem;
+    justify-contetn: space-around;
+    padding-left: 4rem;
+    padding-right:4rem;
     
 }
 
