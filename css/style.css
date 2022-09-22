@@ -146,15 +146,14 @@ p{
 li{
         list-style-type: none;
         font-size: 2.4rem;
-        width:80%;
         line-height: 1.5;
         color: aliceblue;
         font-weight: 800;
-        padding-bottom: 1rem;
-      
-       
+        padding-bottom: 1rem;  
             
-    }   
+    }
+.info li{
+    width:80%;
 .para
 {
     font-size: 1.8rem;
