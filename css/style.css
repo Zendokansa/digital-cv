@@ -221,7 +221,6 @@ li{
 }
 .contact_icon{
     display: flex;
-    margin-right: 10rem;
     align-items:center;
     justify-contetn: space-around;
     padding-left: 4rem;
