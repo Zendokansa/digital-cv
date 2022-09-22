@@ -9,6 +9,7 @@
         right: 70%;
         z-index: 3;
         color: rgb(236, 246, 241);
+        width:60%;
     }
     .name{
         font-size: 3rem;
