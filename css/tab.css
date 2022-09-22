@@ -1,0 +1,74 @@
+/* tab screen */
+/* 61.6em *16 = 985.6px  */
+@media (max-width:48em){
+    .profile{
+        width: 100%;
+        position:absolute;
+        top: 15%;
+        left:33%;
+        right: 70%;
+        
+        z-index: 3;
+        color: rgb(236, 246, 241);
+    }
+    .name{
+        font-size: 3rem;
+        width:fit-content;
+        padding-left: 3.5rem;
+    }
+    
+    
+    .img_person{
+        transform: scale(2);
+    }
+    .width{
+        display: flex;
+        flex-wrap: wrap;
+        flex:49%;
+    }
+
+    .cert{
+        display: block;
+    }
+
+   .cert_info{
+        width: 100%;
+        
+   }
+
+   figure{
+        padding-left:3.3rem;
+        line-height: 1.5;
+        
+   }
+   #target{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+   }
+   figure h3 {
+    font-size: 3rem;
+    letter-spacing: -1px;
+   }
+  
+   p{
+    font-size: 2.5rem;
+    line-height: 1.5;
+   }
+  
+   .project{
+    grid-template-columns: 1fr 1fr;;
+   }
+   .table td{
+    font-size: 1.5rem;
+    /* border-bottom: 2px solid black; */
+   }
+   .table {
+    border-collapse: collapse;
+   }
+   
+   .box_time_2{
+    padding:3px 3px;
+    font-size: 1.6rem;
+    vertical-align:top;
+   }
+}

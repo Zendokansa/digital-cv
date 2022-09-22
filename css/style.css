@@ -1,0 +1,542 @@
+/*  color 
+    xám ---> nhạt
+    nền color : #BBBBBB #D9D9D9 
+    main - tints
+    main color : #ee9219 #EA2929 
+    side color :#F17676 #F7B3B3
+    Phong cách trẻ, vui tươi.
+    */
+
+* {
+    box-sizing: border-box;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+html {
+    font-size: 62.5%;
+   
+}
+
+body{
+    max-width: 100%;
+    }
+
+.bg-grey {
+    background: #f7f7f7;
+    
+}
+#job-info > li{
+    list-style-type: none;
+}
+
+section > .container{
+   max-width: 100%;
+        
+ }
+
+#nav-bar {
+    display: flex;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center; 
+    margin:0rem 0rem 6rem 0rem;
+   
+     
+}
+    
+
+.nav_bar
+{   display: flex;
+    align-items: flex-start;
+    justify-content:center;
+    text-align: center;
+} 
+.nav_bar_list{
+    display: flex;
+    column-gap: 4rem; */
+    
+}
+
+#nav-bar li:nth-child(3){
+    width: 10rem;
+  
+}
+.btn{
+    display: none;
+}
+.btn p{
+    text-align: end;
+}
+
+
+#nav-bar li a:link, a:active{
+    text-decoration: none;
+}
+#nav-bar li a:hover,a:active {
+        transform:scale(1.2)
+}
+
+
+.img{
+    width: 100%;
+    align-self: left;
+}
+
+.img_person{
+        height: auto;
+        width: 4rem;
+        background-color: whitesmoke;
+        border: 0.2rem solid white;
+        border-radius: 50%;
+        z-index: 5;
+        transform: scale(3);      
+}
+
+
+
+p{
+    font-size: 1.6rem;
+}
+
+#info,#profile_info{
+  
+    background-color: aqua;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 5px 3px rgba(238, 146, 25,0.2);
+    align-content: center;    
+    font-size: 2rem;
+    
+}
+
+#certificate,#project-1{
+ 
+    background-color: aqua;
+    text-align: center;
+    border-radius:1rem;
+    box-shadow: 3px 3px 5px 3px rgba(238, 146, 25,0.2);
+    /* align-content: flex-start;     */
+    margin-left: 0rem;;    
+    font-size: 2rem;
+     
+}   
+.profile{
+    /* float: left; */
+    width: 100%;
+    position:absolute;
+    top : 35%;
+    left:40%; 
+    z-index: 3;
+    color: rgb(236, 246, 241);
+}
+@media (max-width:1024px)
+{
+    .profile{
+        /* float: left; */
+        width: 100%;
+        position:absolute;
+        top : 20%;
+        left:35%; 
+        z-index: 3;
+        color: rgb(236, 246, 241);
+    }
+}
+/* .info  */
+li{
+        list-style-type: none;
+        font-size: 2.4rem;
+        /* line-height: 1.5; */
+        color: aliceblue;
+        font-weight: 800;
+        padding-bottom: 1rem;
+        /* margin-left: 8rem; */
+       
+            
+    }   
+.para
+{
+    font-size: 1.8rem;
+    line-height: 1.6;
+    padding-top: 2rem;
+    font-weight: 500;
+    /* margin-left: 5.5rem;
+    margin-right: 5.5rem; */
+    padding-left: 1rem;
+    /* padding-bottom: 10px;
+     */
+}
+
+
+.name{
+    font-size: 4rem;
+    width: fit-content;
+    
+   }
+.job{
+    margin-top: 0px   ;
+    font-size: 2.2rem     ;
+    padding-left: 8rem;
+    width: fit-content;
+}  
+
+
+#personal_info{
+
+    background-color: #ee9219;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+  
+    border-radius: 1rem;
+}
+.box{
+    text-align: center;  
+    vertical-align: center;
+    height: 3rem;
+    width: auto;
+    background-color: aliceblue;
+}
+.section-title{
+    font-size: 3rem;
+    text-align: left;
+}
+.d-row{
+    width: 75%;
+}
+.about--target
+{       margin-top: -9rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        
+        margin-left: 0px;
+        column-gap: 1rem;
+        align-content: flex-start;
+}
+
+#target{
+    background-color: #ee9219;
+    border-radius: 1rem;
+  
+    
+}
+.contact_icon{
+    display: flex;
+    margin-right: 10rem;
+    align-items:center;
+    /* column-gap: 5rem; */
+    margin-left: 8rem;
+    
+}
+
+/* Chia 3 cột bằng nhau
+    chia 2 hàng không bằng nhau 
+    tạo các ô thẳng hàng*/
+
+
+.col{
+    display: grid;
+    grid-template-columns: 75% 25%;
+
+}
+
+.column_css {
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+ 
+    row-gap: 1rem;   
+    column-gap: 1rem;
+}
+
+
+.width{
+    display: flex;
+    width:32.4%;
+
+}
+
+section{
+    padding-bottom: 1.5rem;
+}
+
+
+/* tọa chấm thay cho list_style */
+li h3::before{
+    content: "";
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #1e17a3;
+    position: relative;
+    color: aqua;
+    z-index:2;
+    position: absolute;
+    margin-left: -1.3rem;
+    margin-top: 0.8rem;;
+    }
+li{
+    list-style: none;
+    padding-bottom: 1rem;
+}
+figure h3{
+    font-size: 2rem;
+}
+
+ /* tạo hộp */
+.box_time{
+    height: 1rem;
+    width: 7rem;
+    padding : 3px 10px 0px 10px;
+    color: white;
+    font-weight: 600;
+    background-color:#F17676 ;
+    border-radius: 4px;
+    box-shadow: 1px 3px 5px 3px rgba(241, 118, 118,0.3);
+    
+}
+div h2{
+    text-transform: uppercase;
+    padding-top: 1rem;
+    margin-bottom:2rem;
+}
+.box_time_2{
+    height: 1rem;
+    width: 3rem;
+    padding : 5px 5px 5px 5px;
+    color: white;
+    font-weight: 600;
+    background-color: #F7B3B3 ;
+    align-self: center;
+    vertical-align: center;
+    border-radius: 4px;
+    box-shadow: 1px 3px 0 3px rgba(241, 118, 118,0.3);
+    
+}
+
+
+.edu{
+        grid-column: 2;
+        grid-template-columns: 30rem auto;
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        
+}
+.icon_size{
+    font-size: 3rem;
+    color:rgb(183, 31, 31);
+    /* justify-self: flex-end; */
+}
+.activity{    
+
+}
+.hobby{
+    display: flex;
+    flex-direction: row;
+    flex:50%;
+    justify-content: space-around;
+    align-items: center;
+    
+    padding:10px 10px;
+ 
+   
+}
+
+.icon_size_1{
+    font-size: 2rem;
+    color: rgb(241, 242, 243);
+    align-self: center;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.level{
+   display: flex;
+   column-gap: 10px;
+   margin-bottom: 15px;   
+}
+
+.icon_size_2{
+
+}
+.left_padding{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.dash{
+    width: 45px;
+    height: 3px;
+    background-color: #F7B3B3;
+    margin-top: 15px;
+    /* margin-left:-10px; */
+    
+}
+#check{
+    background-color: aqua;
+}
+.cert{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start  ;   
+}
+.cert_info{
+    display: inline-flex;
+    padding-top:15px;
+    padding-left: 3rem;
+    text-align: left;
+   
+}
+.cert_title  {
+    text-transform: capitalize;
+}  
+   
+
+#border_bottom{
+    border-bottom: 0.5rem solid black;
+    
+}
+.img_cer{
+    height : 15rem;
+    
+}
+.project{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,32.33%);
+        column-gap: 2rem;
+       
+        
+}
+
+.experience,.activity,.hobby_1,.language,.skill,.edu{
+    background-color: #ee9219;
+    border-radius: 15px;
+    padding: 15px;
+    width: 100%;
+    
+}
+.project_1, .project_2,.project_3{
+    display: block;
+    /* padding: 10px 10px; */
+    width: 100%    ; 
+    
+}
+.img_pro{
+    width: 100%;
+    height: auto;
+    align-content: center;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    box-shadow: 1px 1px 10px 2px rgba(0,0,0,.3);
+    z-index: -1;
+}
+.project_info{
+   
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+   
+    
+}
+/* màu nền các khung */
+.background{
+    background-color: #ee9219;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    box-shadow: 3px 3px 10px 5px rgba(0,255,255,.3);
+    padding-left: 2rem;
+    /* height: auto; */
+    
+}
+.icon_size_2{
+    font-size: 1.6rem;
+    padding-bottom: 1.6rem;
+    width: 33%;
+    
+}
+.project_time{
+    display: flex;
+    column-gap: 3rem ;
+
+    align-items: flex-start;
+}
+.describe{
+    display:flex;
+    flex-wrap: wrap;   
+}
+
+.describe p:first-child{
+    width: 25%;
+    }
+    #margin {
+        width: 75%;
+        padding: 0 15px;
+    }
+ 
+
+.footer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    row-gap: 1rem;
+   
+    /* vertical-align: center; */
+}
+.block{
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    padding-right: 2rem;
+    column-gap: 0.8rem;
+    padding-top:0.5rem
+    padding-bottom: 0.5rem;    
+}
+.icon_circle{
+    /* width: 3.5rem; */
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+}
+.project h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.d-mobile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    padding: 1rem 0rem;
+}
+table{
+    margin-top:-4px;
+   
+    z-index: 3;
+}
+.table{
+    width: 100%;  
+     
+}
+tr{
+    height: 30px;
+    padding-bottom: 10px;
+}
+tr td:first-child{
+    width: 22%;
+}
+td{
+    vertical-align: top;
+    width: 75%;
+    padding-right:2rem;
+    padding-bottom:1.5rem;
+}
+.home{
+    font-size: 1rem;
+    max-width: 1rem;
+    
+}
+.project a:link, a:hover, a:active{
+    text-decoration: none;    
+}
