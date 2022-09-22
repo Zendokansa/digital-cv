@@ -2,12 +2,11 @@
 /* 61.6em *16 = 985.6px  */
 @media (max-width:48em){
     .profile{
-        width: 100%;
+        width: 60%;
         position:absolute;
         top: 15%;
         left:33%;
         right: 70%;
-        
         z-index: 3;
         color: rgb(236, 246, 241);
     }
