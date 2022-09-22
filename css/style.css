@@ -219,7 +219,7 @@ li{
 .contact_icon{
     display: flex;
     align-items:center;
-    justify-contetn: space-around;
+    justify-content: space-around;
     padding-left: 4rem;
     padding-right:4rem;
     
