@@ -51,6 +51,7 @@ section > .container{
     align-items: flex-start;
     justify-content:center;
     text-align: center;
+    
 } 
 .nav_bar_list{
     display: flex;
@@ -149,23 +150,18 @@ li{
         line-height: 1.5;
         color: aliceblue;
         font-weight: 800;
-        padding-bottom: 1rem;  
+        padding-bottom: 2rem;  
             
     }
-.info li{
-    width:80%;
-}
+
 .para
 {
     font-size: 1.8rem;
     line-height: 1.6;
     padding-top: 2rem;
     font-weight: 500;
-    /* margin-left: 5.5rem;
-    margin-right: 5.5rem; */
     padding-left: 1rem;
-    /* padding-bottom: 10px;
-     */
+   
 }
 
 
@@ -329,9 +325,7 @@ div h2{
     color:rgb(183, 31, 31);
     /* justify-self: flex-end; */
 }
-.activity{    
 
-}
 .hobby{
     display: flex;
     flex-direction: row;
