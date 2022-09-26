@@ -32,6 +32,9 @@ body{
 .img{
     width: 100%;
 }
+  .cert section:nth-child(odd){
+    border-right:none;
+}
  .profile{
           width: 60%;
         position:absolute;
