@@ -86,7 +86,7 @@ section > .container{
 
 .img{
     width: 100%;
-  
+    height: 30rem;
     align-self: left;
 }
 
@@ -120,7 +120,7 @@ p{
         margin-right: 1rem;
         color: blue;
         height: 2rem;
-        width: fit-content;
+        width:fit-content;
 }
 
 #certificate,#project-1{
@@ -196,7 +196,7 @@ li{
 
 #personal_info{
 
-    background-color: #BBBBBB;
+    background-color: #BBBBBB;  
     border-bottom-right-radius: 1rem;
     border-top-right-radius: 1rem;
     border-radius: 1rem;
@@ -389,7 +389,9 @@ div h2{
 .cert{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: flex-start  ;   
+    align-items: flex-start  ;  
+    /* background: #D9D9D9;  */
+  
     
 }
 .cert_info{
@@ -397,6 +399,7 @@ div h2{
     padding-top:15px;
     padding-left: 3rem;
     text-align: left;
+    /* background: #D9D9D9;  */
 }
 .cert section:nth-child(odd){
     border-right: 5px solid #ee9219;
@@ -412,6 +415,7 @@ div h2{
 }
 .img_cer{
     height : 15rem;
+    width:100%;
     
 }
 .project{
