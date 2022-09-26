@@ -12,7 +12,10 @@
     margin: 0 0;
     padding: 0 0;
 }
-
+a {
+    text-decoration: none;
+    color: black;
+}
 html {
     font-size: 62.5%;
    
@@ -23,7 +26,7 @@ body{
     }
 
 .bg-grey {
-    background: #f7f7f7;
+    background: rgba(187, 187, 187,0.4);
     
 }
 #job-info > li{
@@ -44,7 +47,7 @@ section > .container{
    
      
 }
-    
+ 
 
 .nav_bar
 {   display: flex;
@@ -53,6 +56,8 @@ section > .container{
     text-align: center;
     
 } 
+
+
 .nav_bar_list{
     display: flex;
     column-gap: 4rem; */
@@ -81,6 +86,7 @@ section > .container{
 
 .img{
     width: 100%;
+    height: 30rem;
     align-self: left;
 }
 
@@ -102,28 +108,35 @@ p{
 
 #info,#profile_info{
   
-    background-color: aqua;
+    background-color: #BBBBBB;
     text-align: center;
     border-radius: 1rem;
-    box-shadow: 3px 3px 5px 3px rgba(238, 146, 25,0.2);
-    align-content: center;    
+    box-shadow: 3px 3px 5px 3px rgba(238, 146, 25,0.2); 
     font-size: 2rem;
+    padding: 0.5rem 0.5rem;
     
+}
+.icon_navbar{
+        margin-right: 1rem;
+        color: blue;
+        height: 2rem;
+        width: 2rem;
 }
 
 #certificate,#project-1{
  
-    background-color: aqua;
+    background-color:   #BBBBBB;
     text-align: center;
     border-radius:1rem;
     box-shadow: 3px 3px 5px 3px rgba(238, 146, 25,0.2);
     /* align-content: flex-start;     */
     margin-left: 0rem;;    
     font-size: 2rem;
+    padding: 0.5rem 0.5rem;
      
 }   
 .profile{
-    /* float: left; */
+ 
     width: 60%;
     position:absolute;
     top : 35%;
@@ -131,6 +144,7 @@ p{
     z-index: 3;
     color: rgb(236, 246, 241);
 }
+
 @media (max-width:1024px)
 {
     .profile{
@@ -150,16 +164,18 @@ li{
         line-height: 1.5;
         color: aliceblue;
         font-weight: 800;
-        padding-bottom: 2rem;  
+        padding-bottom: 2rem;
+        /* margin-left: 8rem; */
+       
             
-    }
-
+    }   
 .para
 {
     font-size: 1.8rem;
     line-height: 1.6;
     padding-top: 2rem;
     font-weight: 500;
+
     padding-left: 1rem;
    
 }
@@ -180,10 +196,9 @@ li{
 
 #personal_info{
 
-    background-color: #ee9219;
+    background-color: #BBBBBB;
     border-bottom-right-radius: 1rem;
     border-top-right-radius: 1rem;
-  
     border-radius: 1rem;
 }
 .box{
@@ -211,7 +226,7 @@ li{
 }
 
 #target{
-    background-color: #ee9219;
+    background-color: rgba(187, 187, 187,0.4);
     border-radius: 1rem;
   
     
@@ -221,8 +236,7 @@ li{
     align-items:center;
     justify-content: space-around;
     padding-left: 4rem;
-    padding-right:4rem;
-    
+    padding-right: 4rem;
 }
 
 /* Chia 3 cột bằng nhau
@@ -325,7 +339,9 @@ div h2{
     color:rgb(183, 31, 31);
     /* justify-self: flex-end; */
 }
+.activity{    
 
+}
 .hobby{
     display: flex;
     flex-direction: row;
@@ -363,6 +379,7 @@ div h2{
     height: 3px;
     background-color: #F7B3B3;
     margin-top: 15px;
+    
     /* margin-left:-10px; */
     
 }
@@ -373,13 +390,16 @@ div h2{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: flex-start  ;   
+    
 }
 .cert_info{
     display: inline-flex;
     padding-top:15px;
     padding-left: 3rem;
     text-align: left;
-   
+}
+.cert section:nth-child(odd){
+    border-right: 5px solid #ee9219;
 }
 .cert_title  {
     text-transform: capitalize;
@@ -387,7 +407,7 @@ div h2{
    
 
 #border_bottom{
-    border-bottom: 0.5rem solid black;
+    border-bottom: 0.5rem solid #ee9219;
     
 }
 .img_cer{
@@ -404,7 +424,7 @@ div h2{
 }
 
 .experience,.activity,.hobby_1,.language,.skill,.edu{
-    background-color: #ee9219;
+    background-color: #BBBBBB;
     border-radius: 15px;
     padding: 15px;
     width: 100%;
@@ -435,7 +455,7 @@ div h2{
 }
 /* màu nền các khung */
 .background{
-    background-color: #ee9219;
+    background-color: #BBBBBB;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
     box-shadow: 3px 3px 10px 5px rgba(0,255,255,.3);
@@ -492,6 +512,7 @@ div h2{
     /* width: 3.5rem; */
     border-radius: 50%;
     background-color: blue;
+    width: 50%;
     color: white;
 }
 .project h1{
