@@ -26,6 +26,9 @@ html{
 .h-40 {
     height: 40%;
 }
+.primary{
+    padding : 0 2rem;
+}
 .btn-violet{
     width:3rem;
     height:3rem;
@@ -82,7 +85,9 @@ html{
     .d{
         display: flex;
     }
-  
+    .h-100,.h-60,.h-40{
+        height:auto;
+    }
     .flex_change{
         flex-direction: column;
         flex-wrap: wrap;
