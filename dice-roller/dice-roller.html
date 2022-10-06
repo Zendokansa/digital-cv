@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="dice.css" rel="stylesheet">
+
+    <title>dice-roller</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="grid">
+            <section class="player_1 glow">
+                <h2 class="name_1">Player 1</h2>
+                <h1 class="score_1">0</h1>
+                <p class="current_1">Current<br><span class="current_score_1">0</span></bT>
+                </p>
+            </section>
+            <section class="player_2">
+                <h2 class="name_2"> Player 2</h2>
+                <h1 class="score_2">0</h1>
+                <p class="current_2">Current<br><span class="current_score_2">0</span></bt>
+                </p>
+            </section>
+        </div>
+        <div class="dice-roller hidden">
+            <div class="dot_1 hidden"></div>
+            <div class="dot_2 hidden"></div>
+            <div class="dot_3 hidden"></div>
+            <div class="dot_4 hidden"></div>
+            <div class="dot_5 hidden" id="dot1"></div>
+            <div class="dot_6 hidden"></div>
+            <div class="dot_7 hidden"></div>
+
+        </div>
+        <form for="reset" id="new_game">
+            <button type="button" class="newgame">New Game</button>
+        </form>
+        <form for="roll-dice" id="roll-dice">
+            <button type="button" class="roll">roll dice</button>
+        </form>
+        <form for="hold" id="hold-dice">
+            <button type="button" class="hold">hold</button>
+        </form>
+    </div>
+    <script src="dice.js"></script>
+</body>
+
+</html>
