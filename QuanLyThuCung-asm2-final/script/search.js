@@ -57,41 +57,36 @@ find_button.addEventListener('click', function () {
   const dewormed = get_check('.dewormed') == true ? 'true' : 'false';
   const sterillized = get_check('.sterillized') == true ? 'true' : 'false';
   let pet_find = [];
+  let pet_check = [];
   console.log(pet_breed.value);
-  pet_find = pet_detail_data.filter(t => t.pet_type == pet_type.value);
-  if (pet_find == '') pet_find = pet_detail_data;
-  const test_breed = pet_find.some(t => t.pet_breed == pet_breed.value);
-  if (test_breed == true)
-    pet_find = pet_find.filter(t => t.pet_breed == pet_breed.value);
-  if (pet_find == '') pet_find = pet_detail_data;
-  pet_find = pet_find.filter(t => t.pet_id.match(pet_id.value));
-  if (pet_find == '') pet_find = pet_detail_data;
-  if (pet_name.value != '') {
+  // check pet_type
+  pet_check = pet_detail_data.filter(t => t.pet_type == pet_type.value);
+  if (pet_check == '') pet_find = pet_detail_data;
+  else pet_find = pet_check;
+  // check pet_breed
+  if (pet_breed.value != 'select breed')
+    pet_check = pet_find.filter(t => t.pet_breed == pet_breed.value);
+  if (pet_check.length <= pet_find.length) pet_find = pet_check;
+  // check pet_iD
+  pet_check = pet_find.filter(t => t.pet_id.match(pet_id.value));
+  if (pet_check.length <= pet_find.length) pet_find = pet_check;
+  // if (pet_find == '') pet_find = pet_detail_data;
+  if (pet_name.value) {
     pet_find = pet_find.filter(t =>
       t.pet_name.toLowerCase().match(pet_name.value.toLowerCase())
     );
   }
+  if (pet_check.length <= pet_find.length) pet_find = pet_check;
   if (pet_find == '') pet_find = pet_detail_data;
-  if (pet_id.value != '')
-    if (vaccined == 'true')
-      pet_find = pet_find.filter(t => t.vaccine == 'true');
-  if (dewormed == 'true') pet_find = pet_find.filter(t => t.dewormed == 'true');
+  if (vaccined == 'true') pet_check = pet_find.filter(t => t.vaccine == 'true');
+  if (dewormed == 'true') pet_check = pet_find.filter(t => t.deworm == 'true');
   if (sterillized == 'true')
-    pet_find = pet_find.filter(t => t.sterillize == 'true');
-  if (pet_find == pet_detail_data) pet_find = [];
+    pet_check = pet_find.filter(t => t.sterillize == 'true');
+  if (pet_check.length <= pet_find.length) pet_find = pet_check;
+  if (pet_find.length == pet_detail.length) pet_find = [];
   console.log(vaccined, dewormed, sterillized);
-
   console.log(pet_find);
+  // if (pet_find == pet_detail_data) pet_find = [];
 
   tableCreate1(pet_find, '', 'edit');
 });
-
-// pet_find = [
-//   ...petname_filter,
-//   ...petid_filter,
-//   ...pettype_filter,
-//   ...petbreed_filter,
-//   ...petvaccine_filter,
-//   ...petdewormed_filter,
-//   ...petsterillized_filter,
-// ];
