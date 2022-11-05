@@ -217,10 +217,11 @@ const tableCreate1 = function (arra, pet_era, button_class) {
     });
     // append the <tbody> inside the <table>
     table.appendChild(tableBody);
+      // tbl border attribute to
+    table.setAttribute('border', '2');
     // put <table> in the <body>
     body.appendChild(table);
-    // tbl border attribute to
-    table.setAttribute('border', '2');
+  
   }
 };
 
