@@ -1,7 +1,15 @@
 'use strict';
 
 document.querySelector('.btn').addEventListener('click', function () {
-  if (pet_id == '') return;
+  console.log(pet_id.value, pet_name.value);
+  if (pet_id.value == '' || pet_name.value == '') {
+    alert('input valid data');
+    return;
+  }
+  if (pet_age < 1 || pet_age > 15) {
+    alert('it must be between 1 and 15');
+    return;
+  }
   const x = detail();
   console.log(x);
   const atc = check_value(x);
@@ -69,7 +77,7 @@ document.querySelector('.btn-warning').addEventListener('click', function () {
 });
 
 // create table pet_profile
-table.className = 'pet_profile';
+if (table) table.className = 'pet_profile';
 
 confirm_delete.addEventListener('click', function () {
   document.querySelector('.confirm_box').classList.add('hidden');
@@ -87,8 +95,8 @@ confirm_delete.addEventListener('click', function () {
 });
 // filter
 const select = document.querySelector('.pet_breed');
-let breedOpt = getdata('breedOpt');
-if (!breedOpt) breedOpt = [];
+let breedOpt = [];
+if (getdata('breedOpt') != '') breedOpt = getdata('breedOpt');
 const chose = breedOpt.filter(chose => chose.pet_type == 'dog');
 select.innerHTML = ` <option class="bg-secondary" value="Not select">Select Breed </option>`;
 let opt_breed = '';
@@ -104,6 +112,7 @@ pet_breed.addEventListener('change', function () {
   console.log(filter_pet);
   tableCreate1(filter_pet, '', 'delete');
 });
+
 const select_opt = function (a) {
   console.log(a);
   let chose = breedOpt;

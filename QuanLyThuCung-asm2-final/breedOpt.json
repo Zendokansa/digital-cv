@@ -1,0 +1,34 @@
+[
+  {
+    "breed": "hello",
+    "pet_type": "dog"
+  },
+  {
+    "breed": "good boy",
+    "pet_type": "cat"
+  },
+  {
+    "breed": "husky",
+    "pet_type": "dog"
+  },
+  {
+    "breed": "ngao",
+    "pet_type": "dog"
+  },
+  {
+    "breed": "meow",
+    "pet_type": "cat"
+  },
+  {
+    "breed": "monleo",
+    "pet_type": "cat"
+  },
+  {
+    "breed": "wison",
+    "pet_type": "cat"
+  },
+  {
+    "breed": "wonderful",
+    "pet_type": "cat"
+  }
+]

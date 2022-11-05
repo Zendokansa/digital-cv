@@ -2,11 +2,8 @@
 // const breed = get_text('.pet_breed_value  ');
 // const pet_type = get_text('.pet_type');
 const submit = document.querySelector('.btn_submit');
-// const select = document.querySelector('.pet_type'); const pet_type
-// const breeddata = getdata('pet_detail');
-// GETDATA PETDETAIL
-// console.log(pet_type);
 let breedArr = [];
+
 const breedArray = function () {
   const breeddata = getdata('pet_detail');
   let breedAr = [];
@@ -34,8 +31,8 @@ const breedArray = function () {
 
 // if (breed_data) breedOpt = breed_data; // breed_data =[{type, breed},{}]
 // console.log(breedOpt);
-let breedOpt = [];
 const breeddata = getdata('breedOpt');
+let breedOpt = [];
 if (breeddata) breedOpt = breeddata;
 const breedvalid = function () {
   const breed = get_text('.pet_breed_value');
@@ -49,6 +46,7 @@ table.className = 'pet_breed'; // tao table voi class name
 document.querySelector('.content').appendChild(table); // vi tri dat table
 // submit function
 if (breeddata) breedOpt = breeddata;
+
 submit.addEventListener('click', function () {
   // check value
   const breed = get_text('.pet_breed_value');
@@ -65,9 +63,7 @@ submit.addEventListener('click', function () {
   } else {
     console.log(`this breed is already exists`);
   }
-  // breedOpt.push(x);
-
-  // render table
+  // breedOpt.push(x);  // render table
   breedArr = breedArray();
   console.log(breedArr);
   tableCreate1(breedArr, 'pet_id', 'edit');

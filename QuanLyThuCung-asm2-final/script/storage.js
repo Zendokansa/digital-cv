@@ -118,7 +118,6 @@ const detail = function () {
   // console.log(vaccine);
   // const vaccine_check = healthy_check(vaccine);
   const dewormed = get_check('.dewormed') == true ? 'true' : 'false';
-  const dewormed_check = healthy_check(dewormed);
   const sterillized = get_check('.sterillized') == true ? 'true' : 'false';
   // const sterillized_check = healthy_check(sterillized);
   const get_day = day.getDate();
@@ -151,10 +150,8 @@ const table = document.createElement('table');
 const body = document.querySelector('.content');
 const tableBody = document.createElement('tbody');
 const tableCreate1 = function (arra, pet_era, button_class) {
-  erase_table1();
+  if (table) erase_table1();
   // if (!arra) arra = 'No data';
-  if ((pet_id == pet_name) == '') console.log('input valid data');
-  if (pet_age <= 1 || pet_age >= 15) console.log('it must be between 1 and 15');
   let cell = '';
   let cellText = '';
   var row = document.createElement('tr');
@@ -217,11 +214,10 @@ const tableCreate1 = function (arra, pet_era, button_class) {
     });
     // append the <tbody> inside the <table>
     table.appendChild(tableBody);
-      // tbl border attribute to
+    // tbl border attribute to
     table.setAttribute('border', '2');
     // put <table> in the <body>
     body.appendChild(table);
-  
   }
 };
 
@@ -300,7 +296,9 @@ let item = '';
 if (document.querySelector('.content'))
   document.querySelector('.content').addEventListener('click', function (e) {
     // e.preventDefault();
+    e.stopPropagation();
     const click = e.target;
+
     if (click.classList.contains('delete')) {
       pet_detail.forEach(t => {
         if (t.pet_id == click.value) {

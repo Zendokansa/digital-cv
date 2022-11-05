@@ -1,3 +1,5 @@
+'use strict';
+// let import_data = get_variable('.btn_import');
 const btn_upLoad = get_variable('.upload');
 
 let str;
