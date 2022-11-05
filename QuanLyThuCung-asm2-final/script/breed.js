@@ -34,8 +34,8 @@ const breedArray = function () {
 
 // if (breed_data) breedOpt = breed_data; // breed_data =[{type, breed},{}]
 // console.log(breedOpt);
-const breeddata = getdata('breedOpt');
 let breedOpt = [];
+const breeddata = getdata('breedOpt');
 if (breeddata) breedOpt = breeddata;
 const breedvalid = function () {
   const breed = get_text('.pet_breed_value');
