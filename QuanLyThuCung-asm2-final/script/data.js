@@ -1,39 +1,22 @@
-'use strict';
-// let import_data = get_variable('.btn_import');
 const btn_upLoad = get_variable('.upload');
 
-// function logFile(e) {
-//   let str = e.target.result;
-//   console.log(e.target);
-//   let json = JSON.parse(str);
-//   console.log('string', str);
-//   console.log('json', json);
-//   savePet('pet_detail', json);
-//   return str;
-// }
-// function handleSubmit(event) {
-//   event.preventDefault();
-//   if (!import_data.value.length) return;
-//   let reader = new FileReader();
-//   reader.onload = logFile;
-//   reader.readAsText(import_data.files[0]);
-// }
-
-// btn_upLoad.addEventListener('click', handleSubmit);
 let str;
 btn_upLoad.addEventListener('click', function () {
   let file = get_variable('#file');
-  console.log(file);
+  console.log(file.name);
   file = file.files.item(0);
-  console.log(file);
+  const name = file.name.split('.')[0];
+  console.log(name);
   // e.preventDefault();
   // let file = import_data;
   let reader = new FileReader();
   reader.onload = () => {
     str = reader.result;
-    console.log(str);
+    // console.log(str);
+    const v = str.name;
+    console.log(v);
     const json = JSON.parse(str);
-    savePet('pet_detail', json);
+    savePet(name, json);
     console.log(json);
   };
 
