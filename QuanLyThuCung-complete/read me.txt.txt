@@ -1,0 +1,5 @@
+khi bắt đầu sẽ có vài lỗi về download dữ liệu vì dữ liệu rỗng.=> nhập thêm dữ liệu vào.
+Vui lòng nhập breed và type trong phần breed trước khi nhập pet.
+Nếu không nhập trước thì có thể nhập info pet trước, sau đó sửa trong phần edit.
+nếu các trang home không hoạt động bình thường. Vui lòng upload 2 file JSON đính kèm.
+thanks.
