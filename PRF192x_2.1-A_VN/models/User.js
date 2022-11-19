@@ -143,7 +143,7 @@ class Users {
   news_api = async () => {
     let abc = "";
     await fetch(
-      `https://newsapi.org/v2/top-headlines?category=${user_setting.category}&apiKey=ff9e8a35b18d418cb93a481a2045d758`
+      `http://newsapi.org/v2/top-headlines?category=${user_setting.category}&apiKey=ff9e8a35b18d418cb93a481a2045d758`
     )
       .then((res) => {
         if (res.ok) {
@@ -161,7 +161,7 @@ class Users {
   search = async (request) => {
     let abc = "";
     await fetch(
-      ` https://newsapi.org/v2/everything?q=${request}&apiKey=ff9e8a35b18d418cb93a481a2045d758`
+      ` http://newsapi.org/v2/everything?q=${request}&apiKey=ff9e8a35b18d418cb93a481a2045d758`
     )
       .then((res) => {
         if (res.ok) {
